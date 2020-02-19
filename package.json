@@ -5,6 +5,7 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "react": "16.6.3",
     "react-dom": "16.6.3",
     "react-jsonschema-form": "1.0.6",
