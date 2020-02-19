@@ -2,7 +2,11 @@ import React from "react";
 
 class App extends React.Component {
   render() {
-    return <></>;
+    return (
+      <>
+        <h1>Gonna be some resty here soon! Stay tuned...</h1>
+      </>
+    );
   }
 }
 

@@ -1,34 +1,24 @@
-# LAB - 
+# LAB - 28
 
-## Project Name
+## RESTy Client
 
-### Author: Student/Group Name
+### Author: David Vloedman
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
+
+- [Deployment](https://david-vloedman.github.io/401-lab-28/)
+
+- [CI](https://github.com/david-vloedman/401-lab-28/actions)
+
+- [Repo](https://github.com/david-vloedman/401-lab-28)
 
 #### Documentation
 
-* [JSDocs](./docs/index.html)
-
-### Setup
-#### `.env` requirements (where applicable)
-
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
-
-#### How to initialize/run your server app (where applicable)
-
-* 'npm run'
-
-  
 #### Tests
 
-* 'npm test'
+- 'npm test'
 
 #### UML
 
+UML Coming soon
 ![](./assets/x.jpg)
