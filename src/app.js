@@ -1,11 +1,13 @@
 import React from "react";
 import Superagent from "superagent";
+
 import { Route } from "react-router-dom";
 
 import Header from "./components/header/header";
 import Nav from "./components/nav/nav";
 import Main from "./main";
 import History from "./components/history/history";
+
 
 import "./app.scss";
 
@@ -26,6 +28,7 @@ class App extends React.Component {
       this.setState({
         count: res.body.count,
         results: res.body
+
       });
     });
   };
@@ -55,6 +58,7 @@ class App extends React.Component {
         <Route exact path="/history">
           <History />
         </Route>
+
       </>
     );
   }
