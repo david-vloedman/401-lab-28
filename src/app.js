@@ -1,9 +1,13 @@
 import React from "react";
 import Superagent from "superagent";
-import ReactJson from "react-json-view";
 
-import Form from "./components/form/form";
+import { Route } from "react-router-dom";
+
 import Header from "./components/header/header";
+import Nav from "./components/nav/nav";
+import Main from "./main";
+import History from "./components/history/history";
+
 
 import "./app.scss";
 
@@ -23,7 +27,8 @@ class App extends React.Component {
     Superagent(this.state.method, this.state.url).then(res => {
       this.setState({
         count: res.body.count,
-        results: res.body.results
+        results: res.body
+
       });
     });
   };
@@ -40,12 +45,20 @@ class App extends React.Component {
     return (
       <>
         <Header />
-        <Form
-          onSubmit={this.formSubmit}
-          setMethod={this.setMethod}
-          setUrl={this.setUrl}
-        />
-        <ReactJson src={this.state.results} />
+        <Nav />
+        <Route exact path="/">
+          <Main
+            submit={this.formSubmit}
+            setMethod={this.setMethod}
+            setUrl={this.setUrl}
+            results={this.state.results}
+          />
+        </Route>
+
+        <Route exact path="/history">
+          <History />
+        </Route>
+
       </>
     );
   }
