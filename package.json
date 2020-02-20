@@ -1,5 +1,5 @@
 {
-  "name": "lab28",
+  "name": "401-lab-28",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
@@ -7,8 +7,10 @@
   "homepage": "https://david-vloedman.github.io/401-lab-28/",
   "dependencies": {
     "gh-pages": "^2.2.0",
+    "node-sass": "4.13.1",
     "react": "16.6.3",
     "react-dom": "16.6.3",
+    "react-json-view": "1.19.1",
     "react-jsonschema-form": "1.0.6",
     "react-redux": "5.1.1",
     "react-router-dom": "4.3.1",
